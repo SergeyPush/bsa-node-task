@@ -10,7 +10,8 @@
     "start": "node index.js",
     "build-front": "cd client | ls",
     "feedback": "node ./feedback/index.js",
-    "generate": "npm run test-local | npm run feedback"
+    "generate": "npm run test-local | npm run feedback",
+    "dev": "supervisor index.js"
   },
   "keywords": [
     "NodeJS",
@@ -28,5 +29,8 @@
   "engines": {
     "node": "16.x.x",
     "npm": "8.x.x"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
   }
 }
